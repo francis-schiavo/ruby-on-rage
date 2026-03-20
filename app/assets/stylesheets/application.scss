@@ -1,0 +1,5 @@
+@use "frontpack/frontpack" with (
+  $theme-mode: 'dark',
+  $background: #1a1a1a,
+  $highlight: #dcac0b,
+);

@@ -1,0 +1,24 @@
+plugins:
+  - rubocop-rails
+  - rubocop-i18n
+  - rubocop-minitest
+  - rubocop-rake
+  - rubocop-performance
+  - rubocop-capybara
+
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  Exclude:
+    - 'db/*schema.rb'
+    - 'bin/*'
+    - 'vendor/**/*'
+
+I18n/RailsI18n:
+  Enabled: true
+
+I18n/GetText:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
