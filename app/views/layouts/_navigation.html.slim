@@ -1,4 +1,4 @@
 = link_to t(:home), root_url
 
-- MenuLoader.tutorials.each do |tutorial|
-  = link_to tutorial, tutorial_path(tutorial), class: 'no-underscore'
+- MenuLoader.tutorials.each do |path, tutorial|
+  = link_to tutorial[:title], tutorial_path(path), class: 'no-underscore'

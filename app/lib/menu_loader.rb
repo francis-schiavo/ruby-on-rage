@@ -5,7 +5,7 @@ class MenuLoader
   attr_accessor :entries
 
   def self.tutorials
-    Rails.application.config_for(:routes)[:tutorials].each.map { |key, _| key.to_s }
+    Rails.application.config_for(:routes)[:tutorials]
   end
 
   def self.chapters_for(tutorial)

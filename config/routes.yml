@@ -36,26 +36,6 @@ shared:
         semantic-commits: Semantic Commits
         gitflow: Gitflow Workflow
         best-practices: Best Practices
-    ruby:
-      title: Ruby
-      uri: /ruby
-      chapters:
-        introduction-to-ruby: Introduction to Ruby
-        installation-with-rvm: Installation with RVM
-        basic-syntax: Basic Syntax
-        data-types-and-variables: Data Types and Variables
-        control-structures: Control Structures
-        methods: Methods
-        classes-and-objects: Classes and Objects
-        inheritance-and-polymorphism: Inheritance and Polymorphism
-        modules-and-mixins: Modules and Mixins
-        exception-handling: Exception Handling
-        file-io: File I/O
-        regular-expressions: Regular Expressions
-        gems-and-bundler: Gems and Bundler
-        testing-with-minitest: Testing with Minitest
-        advanced-topics: Advanced Topics
-        best-practices: Best Practices
     html:
       title: HTML
       uri: /html
@@ -80,3 +60,38 @@ shared:
         responsive-design: Responsive Design
         animations: Animations
         sass-introduction: Sass Introduction
+    js:
+      title: JavaScript
+      uri: /js
+      chapters:
+        basics: Basics
+        variables-and-data-types: Variables and Data Types
+        operators: Operators
+        control-structures: Control Structures
+        functions: Functions
+        arrays: Arrays
+        objects: Objects
+        dom-manipulation: DOM Manipulation
+        events: Events
+        asynchronous-javascript: Asynchronous JavaScript
+        webcomponents-introduction: Web Components Introduction
+    ruby:
+      title: Ruby
+      uri: /ruby
+      chapters:
+        introduction-to-ruby: Introduction to Ruby
+        installation-with-rvm: Installation with RVM
+        basic-syntax: Basic Syntax
+        data-types-and-variables: Data Types and Variables
+        control-structures: Control Structures
+        methods: Methods
+        classes-and-objects: Classes and Objects
+        inheritance-and-polymorphism: Inheritance and Polymorphism
+        modules-and-mixins: Modules and Mixins
+        exception-handling: Exception Handling
+        file-io: File I/O
+        regular-expressions: Regular Expressions
+        gems-and-bundler: Gems and Bundler
+        testing-with-minitest: Testing with Minitest
+        advanced-topics: Advanced Topics
+        best-practices: Best Practices
