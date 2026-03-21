@@ -69,3 +69,14 @@ shared:
         integration-with-css-and-js: Integration with CSS and JS
         accessibility: Accessibility
         best-practices: Best Practices
+    css:
+      title: CSS
+      uri: /css
+      chapters:
+        basics: Basics
+        selectors: Selectors
+        box-model: Box Model
+        layout: Layout
+        responsive-design: Responsive Design
+        animations: Animations
+        sass-introduction: Sass Introduction
