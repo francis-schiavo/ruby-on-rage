@@ -13,6 +13,7 @@ AllCops:
     - 'db/*schema.rb'
     - 'bin/*'
     - 'vendor/**/*'
+    - 'tutorials/**/*'
 
 I18n/RailsI18n:
   Enabled: true

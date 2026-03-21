@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     grid-template-rows: auto;
-    grid-template-areas: "logo main-menu profile";
+    grid-template-areas: "logo title profile" "logo main-menu profile";
     align-items: end;
   }
 
@@ -67,6 +67,8 @@
       height: config.$logo-height;
     }
   }
+
+  #title { grid-area: title; }
 
   #main-menu {
     display: flex;

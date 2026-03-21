@@ -21,6 +21,7 @@ html
       toggle-button#btn-menu.md-hidden.lg-hidden(type='toggle' data-icon="menu" target="main-menu" visible-class="-" hidden-class="sm-hidden")
       = link_to root_url, id: :logo do
         = image_tag 'logo.png'
+      h1#title Ruby on Rage
       nav#main-menu.sm-hidden
         = render 'layouts/navigation'
       #profile
