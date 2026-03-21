@@ -21,3 +21,18 @@ shared:
       uri: /git
       chapters:
         basics: Basics
+        installation: Installation
+        configuration: Configuration
+        creating-repository: Creating a Repository
+        staging-committing: Staging and Committing
+        branching: Branching
+        merging: Merging
+        remote-repositories: Remote Repositories
+        cloning: Cloning
+        pushing-pulling: Pushing and Pulling
+        resolving-conflicts: Resolving Conflicts
+        gitignore: .gitignore
+        advanced-commands: Advanced Commands
+        semantic-commits: Semantic Commits
+        gitflow: Gitflow Workflow
+        best-practices: Best Practices
