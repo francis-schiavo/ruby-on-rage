@@ -1,38 +1,18 @@
 # frozen_string_literal: true
 
-require 'singleton'
-
 # Menu loader
 class MenuLoader
   attr_accessor :entries
 
-  def initialize
-    @entries = {}
+  def self.tutorials
+    Rails.application.config_for(:routes)[:tutorials].each.map { |key, _| key.to_s }
   end
 
-  def execute
-    tutorials_path = Rails.root.join('tutorials')
-    iterate tutorials_path do |dir, tutorial|
-      @entries[tutorial] ||= {}
-
-      iterate File.join(tutorials_path, dir) do |filename, chapter|
-        @entries[tutorial][chapter.gsub('.md', '')] = File.join(tutorials_path, dir, filename)
-      end
-    end
+  def self.chapters_for(tutorial)
+    Rails.application.config_for(:routes).dig(:tutorials, tutorial.to_sym, :chapters)
   end
 
-  def filename(tutorial, chapter)
-    @entries.dig(tutorial, chapter)
-  end
-
-  private
-
-  def iterate(path)
-    Dir.entries(path).each do |dir|
-      next if dir.start_with?('.')
-
-      label = dir.split('-').last
-      yield dir, label
-    end
+  def self.chapter_file(tutorial, chapter)
+    Rails.root.join('tutorials', tutorial, "#{chapter}.md")
   end
 end

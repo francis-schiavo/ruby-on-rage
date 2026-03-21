@@ -1,0 +1,23 @@
+shared:
+  tutorials:
+    linux:
+      title: Linux
+      uri: /linux
+      chapters:
+        introduction-to-linux: Introduction to Linux
+        installing-debian: Installing Debian
+        basic-terminal-commands: Basic Terminal Commands
+        file-and-directory-management: File and Directory Management
+        text-editors: Text Editors
+        package-management-with-apt: Package Management with APT
+        user-management-and-permissions: User Management and Permissions
+        processes-and-jobs: Processes and Jobs
+        shell-scripting-basics: Shell Scripting Basics
+        networking-basics: Networking Basics
+        system-maintenance: System Maintenance
+        advanced-topics: Advanced Topics
+    git:
+      title: Git
+      uri: /git
+      chapters:
+        basics: Basics

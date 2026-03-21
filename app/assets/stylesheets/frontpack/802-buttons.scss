@@ -55,4 +55,9 @@ a.button {
       border-bottom-left-radius: 0;
     }
   }
+
+  &.vertical {
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
 }
