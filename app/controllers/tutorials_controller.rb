@@ -10,9 +10,7 @@ class TutorialsController < ApplicationController
   end
 
   def show
-    content = File.read @chapter_file
-
-    @html = Kramdown::Document.new(content).to_html.html_safe
+    @content = File.read @chapter_file
   end
 
   private

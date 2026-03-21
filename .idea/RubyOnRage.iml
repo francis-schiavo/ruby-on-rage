@@ -118,9 +118,11 @@
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.3.1, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v7.2.0, RVM: ruby-3.4.8) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="redcarpet (v3.6.1, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.11.3, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.6.3, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.4.4, RVM: ruby-3.4.8) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rouge (v4.7.0, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="TEST" name="rubocop (v1.85.1, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.49.1, RVM: ruby-3.4.8) [gem]" level="application" />
     <orderEntry type="library" scope="TEST" name="rubocop-capybara (v2.22.1, RVM: ruby-3.4.8) [gem]" level="application" />

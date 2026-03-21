@@ -10,24 +10,23 @@
 
 ### Steps
 1. Get kernel source:
-```bash
-sudo apt install linux-source
-tar -xvf /usr/src/linux-source-*.tar.xz
-cd linux-source-*/
-```
-
+    ```bash
+    sudo apt install linux-source
+    tar -xvf /usr/src/linux-source-*.tar.xz
+    cd linux-source-*/
+    ```
 2. Configure:
-```bash
-make menuconfig  # Or xconfig, gconfig
-```
+    ```bash
+    make menuconfig  # Or xconfig, gconfig
+    ```
 
 3. Compile:
-```bash
-make -j$(nproc)  # Use all CPU cores
-sudo make modules_install
-sudo make install
-sudo update-grub
-```
+    ```bash
+    make -j$(nproc)  # Use all CPU cores
+    sudo make modules_install
+    sudo make install
+    sudo update-grub
+    ```
 
 4. Reboot into new kernel.
 
@@ -116,7 +115,8 @@ sudo systemctl edit --force --full mytimer.timer
 ```
 
 Example timer:
-```
+
+```ini
 [Unit]
 Description=Run my script daily
 
@@ -130,7 +130,8 @@ WantedBy=timers.target
 
 ### Services
 Create custom services in `/etc/systemd/system/`:
-```
+
+```ini
 [Unit]
 Description=My Service
 
@@ -145,23 +146,27 @@ WantedBy=multi-user.target
 ## Security
 
 ### SELinux/AppArmor
+
 ```bash
 sudo apt install apparmor
 sudo apparmor_status
 ```
 
 ### Intrusion Detection
+
 ```bash
 sudo apt install rkhunter chkrootkit
 sudo rkhunter --check
 ```
 
 ### VPN
+
 ```bash
 sudo apt install openvpn
 ```
 
 ### Certificate Management
+
 ```bash
 sudo apt install certbot
 certbot certonly --webroot -w /var/www/html -d example.com
@@ -170,6 +175,7 @@ certbot certonly --webroot -w /var/www/html -d example.com
 ## Performance Monitoring
 
 ### sysstat
+
 ```bash
 sudo apt install sysstat
 sar -u 1 5  # CPU usage
@@ -182,11 +188,13 @@ For advanced monitoring.
 ## Automation
 
 ### Ansible
+
 ```bash
 sudo apt install ansible
 ```
 
 Playbook example:
+
 ```yaml
 ---
 - hosts: servers
@@ -203,12 +211,14 @@ Configuration management tools.
 ## Cloud Integration
 
 ### AWS CLI
+
 ```bash
 sudo apt install awscli
 aws configure
 ```
 
 ### Google Cloud SDK
+
 ```bash
 sudo apt install google-cloud-sdk
 ```
