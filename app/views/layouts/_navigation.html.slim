@@ -1,1 +1,4 @@
 = link_to t(:home), root_url
+
+- $menu_loader.entries.each do |tutorial, chapters|
+  = link_to tutorial, chapter_path(tutorial, chapters.keys.first), class: 'no-underscore'
