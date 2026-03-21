@@ -56,3 +56,16 @@ shared:
         testing-with-minitest: Testing with Minitest
         advanced-topics: Advanced Topics
         best-practices: Best Practices
+    html:
+      title: HTML
+      uri: /html
+      chapters:
+        basics: Basics
+        elements-and-tags: Elements and Tags
+        attributes: Attributes
+        forms: Forms
+        semantic-html: Semantic HTML
+        html5-features: HTML5 Features
+        integration-with-css-and-js: Integration with CSS and JS
+        accessibility: Accessibility
+        best-practices: Best Practices
