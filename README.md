@@ -1,3 +1,5 @@
+![Ruby on Rage logo](app/assets/images/logo.png)
+
 # RubyOnRage
 
 An interactive Rails application that serves comprehensive tutorials for mastering the essential toolset required to become a proficient Ruby on Rails developer.
