@@ -30,5 +30,7 @@ module RubyOnRage
     config.generators do |g|
       g.helper false
     end
+
+    config.middleware.use Rack::Deflater
   end
 end
