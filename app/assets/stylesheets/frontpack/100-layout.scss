@@ -96,7 +96,7 @@
     #header {
       grid-template-columns: 1fr;
       grid-template-rows: min-content 1fr min-content;
-      grid-template-areas: "logo" "main-menu" "profile";
+      grid-template-areas: "logo" "title" "main-menu" "profile";
       align-items: start;
       justify-items: center;
     }

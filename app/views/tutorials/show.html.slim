@@ -1,4 +1,5 @@
-.container.grid
-  .col-2= render 'chapters'
-  .col-1
-  .col-9= markdown(@content)
+= content_for :breadcrumbs do
+  = link_to MenuLoader.title_for(params[:tutorial]), tutorial_path(params[:tutorial]), class: 'no-underscore'
+  span= MenuLoader.chapter_title params[:tutorial], params[:chapter]
+
+= markdown(@content)

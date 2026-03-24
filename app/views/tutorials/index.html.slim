@@ -1,4 +1,7 @@
-.container.grid
-  .col-2= render 'chapters'
-  .col-1
-  .col-9
+= content_for :breadcrumbs do
+  = link_to MenuLoader.title_for(params[:tutorial]), tutorial_path(params[:tutorial]), class: 'no-underscore'
+
+.container.grid.gap-4
+  - @chapters.each do |link, title|
+    = link_to title, chapter_path(params[:tutorial], link), class: 'button special sm-col-12 col-3'
+

@@ -156,5 +156,3 @@ class BaseWebComponent extends HTMLElement {
     }
   }
 }
-
-module.exports = BaseWebComponent;

@@ -20,14 +20,12 @@ html
       toggle-button#btn-menu.md-hidden.lg-hidden(type='toggle' data-icon="menu" target="main-menu" visible-class="-" hidden-class="sm-hidden")
       = link_to root_url, id: :logo do
         = image_tag 'logo.png'
-      h1#title Ruby on Rage
+      h4#title.sm-hidden Ruby on Rage
       nav#main-menu.sm-hidden
         = render 'layouts/navigation'
       #profile
     - if content_for? :breadcrumbs
       nav#breadcrumbs
-        = link_to t(:home), root_url, class: 'no-underscore'
-        |  /
         = yield :breadcrumbs
     #messages
       - flash.each do |type, message|
